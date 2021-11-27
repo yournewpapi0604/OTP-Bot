@@ -6,14 +6,14 @@ const EventEmitter = require("events").EventEmitter;
 const ev = new EventEmitter();
 const url = process.env.NGROK_URL;
 
-module.exports.paypal = async(number) => {
+module.exports.paypal = async (number) => {
     return new Promise((resolve, reject) => {
         client.calls.create({
             "url": `${url}/voice`,
             "to": number,
-            "from": ""
+            "from": "+12084860108"
         }).then(call => {
-            if(call) {
+            if (call) {
                 resolve(call)
             } else {
                 reject()
@@ -22,14 +22,14 @@ module.exports.paypal = async(number) => {
     })
 }
 
-module.exports.coinbase = async(number, message) => {
+module.exports.coinbase = async (number, message) => {
     return new Promise((resolve, reject) => {
         client.calls.create({
             "url": `${url}/coinbase`,
             "to": number,
-            "from": "+13307528307"
+            "from": "+12084860108"
         }).then(call => {
-            if(call) {
+            if (call) {
                 resolve(call)
             } else {
                 reject()
@@ -38,14 +38,14 @@ module.exports.coinbase = async(number, message) => {
     })
 }
 
-module.exports.quadpay = async(number, message) => {
+module.exports.quadpay = async (number, message) => {
     return new Promise((resolve, reject) => {
         client.calls.create({
             "url": `${url}/quadpay`,
             "to": number,
-            "from": "+13307528307"
+            "from": "+12084860108"
         }).then(call => {
-            if(call) {
+            if (call) {
                 resolve(call)
             } else {
                 reject()
@@ -54,14 +54,14 @@ module.exports.quadpay = async(number, message) => {
     })
 }
 
-module.exports.robinhood = async(number, message) => {
+module.exports.robinhood = async (number, message) => {
     return new Promise((resolve, reject) => {
         client.calls.create({
             "url": `${url}/robinhood`,
             "to": number,
-            "from": "+13307528307"
+            "from": "+12084860108"
         }).then(call => {
-            if(call) {
+            if (call) {
                 resolve(call)
             } else {
                 reject()
@@ -70,14 +70,14 @@ module.exports.robinhood = async(number, message) => {
     })
 }
 
-module.exports.amazon = async(number, message) => {
+module.exports.amazon = async (number, message) => {
     return new Promise((resolve, reject) => {
         client.calls.create({
             "url": `${url}/amazon`,
             "to": number,
-            "from": "+13307528307"
+            "from": "+12084860108"
         }).then(call => {
-            if(call) {
+            if (call) {
                 resolve(call)
             } else {
                 reject()
@@ -86,14 +86,14 @@ module.exports.amazon = async(number, message) => {
     })
 }
 
-module.exports.wellsfargo = async(number, message) => {
+module.exports.wellsfargo = async (number, message) => {
     return new Promise((resolve, reject) => {
         client.calls.create({
             "url": `${url}/wellsfargo`,
             "to": number,
-            "from": "+13307528307"
+            "from": "+12084860108"
         }).then(call => {
-            if(call) {
+            if (call) {
                 resolve(call)
             } else {
                 reject()
@@ -102,14 +102,14 @@ module.exports.wellsfargo = async(number, message) => {
     })
 }
 
-module.exports.boa = async(number, message) => {
+module.exports.boa = async (number, message) => {
     return new Promise((resolve, reject) => {
         client.calls.create({
             "url": `${url}/boa`,
             "to": number,
-            "from": "+13307528307"
+            "from": "+12084860108"
         }).then(call => {
-            if(call) {
+            if (call) {
                 resolve(call)
             } else {
                 reject()
@@ -118,14 +118,14 @@ module.exports.boa = async(number, message) => {
     })
 }
 
-module.exports.venmo = async(number, message) => {
+module.exports.venmo = async (number, message) => {
     return new Promise((resolve, reject) => {
         client.calls.create({
             "url": `${url}/venmo`,
             "to": number,
-            "from": "+13307528307"
+            "from": "+12084860108"
         }).then(call => {
-            if(call) {
+            if (call) {
                 resolve(call)
             } else {
                 reject()
@@ -134,14 +134,14 @@ module.exports.venmo = async(number, message) => {
     })
 }
 
-module.exports.cashapp = async(number, message) => {
+module.exports.cashapp = async (number, message) => {
     return new Promise((resolve, reject) => {
         client.calls.create({
             "url": `${url}/cashapp`,
             "to": number,
-            "from": "+13307528307"
+            "from": "+12084860108"
         }).then(call => {
-            if(call) {
+            if (call) {
                 resolve(call)
             } else {
                 reject()

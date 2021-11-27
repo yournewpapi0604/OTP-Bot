@@ -2,9 +2,9 @@
   "name": "bot",
   "language": "javascript",
   "manager": "yarn",
-  "token": "",
-  "prefix": "",
-  "owners": [
+  "token": "OTE0MTk5NzA1NjMyNzY4MDEw.YaJk0g.sTTwfaoDwJ197XLm1y9RbNRBqBw",
+  "prefix": "-",
+  "owners":"327233989356027924" [
     "seperate ids in with ,",
     "and incase in quotes"
   ]
